@@ -23,10 +23,10 @@ Console.WriteLine($"FirstThree: {badOpenCloseExample.Calculate(list, BadOpenClos
 // No need to change GoodOpenCloseExample
 Console.WriteLine(new String('-', 35));
 GoodOpenCloseExample goodOpenCloseExample = new GoodOpenCloseExample();
-Console.WriteLine($"Iterate: {goodOpenCloseExample.Calculate(list, new IterateCount() )}");
-Console.WriteLine($"Random Index: {goodOpenCloseExample.Calculate(list, new RandomCount() )}");
-Console.WriteLine($"FirstThree: {goodOpenCloseExample.Calculate(list, new FirstThreeCount())}");
-Console.WriteLine($"LastThree: {goodOpenCloseExample.Calculate(list, new LastThreeCount())}");
+Console.WriteLine($"Iterate: {GoodOpenCloseExample.Calculate(list, new IterateCount() )}");
+Console.WriteLine($"Random Index: {GoodOpenCloseExample.Calculate(list, new RandomCount() )}");
+Console.WriteLine($"FirstThree: {GoodOpenCloseExample.Calculate(list, new FirstThreeCount())}");
+Console.WriteLine($"LastThree: {GoodOpenCloseExample.Calculate(list, new LastThreeCount())}");
 
 
 static List<int> populate(ref List<int> list)
