@@ -26,7 +26,7 @@ namespace InterfaceSegregation.BadExamples
 
         public void methodTwo()
         {
-                throw new NotImplementedException();
+                Console.WriteLine($"Method Two Called By bad User: {badID}");
         }
 
         public void methodThree()
@@ -59,7 +59,7 @@ namespace InterfaceSegregation.BadExamples
 
         public void methodThree()
         {
-            throw new NotImplementedException();
+            Console.WriteLine($"Method Three Called By bad User: {badID}");
         }
 
 
@@ -76,7 +76,7 @@ namespace InterfaceSegregation.BadExamples
 
         public void methodOne()
         {
-            throw new NotImplementedException();
+            Console.WriteLine($"Method One Called By bad User: {badID}");
         }
 
         public void methodTwo()
