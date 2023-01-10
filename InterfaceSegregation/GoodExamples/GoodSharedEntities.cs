@@ -7,7 +7,7 @@ using InterfaceSegregation.Interfaces;
 
 namespace InterfaceSegregation.GoodExamples
 {
-    public class GoodUserOne : IUser, IGoodUserInterfaceOne
+    public class GoodUserOne : IUser, IGoodUserInterfaceOne, IGoodUserInterfaceThree
     {
         public int goodID { get; private set; }
         public GoodUserOne(int badID)
@@ -17,7 +17,12 @@ namespace InterfaceSegregation.GoodExamples
 
         public void methodOne()
         {
-            Console.WriteLine($"Method One A Called By good User {goodID}");
+            Console.WriteLine($"Method One Called By good User {goodID}");
+        }
+
+        public void methodThree()
+        {
+            Console.WriteLine($"Method Three Called By good User {goodID}");
         }
 
 
@@ -32,7 +37,7 @@ namespace InterfaceSegregation.GoodExamples
         }
         public void methodTwo()
         {
-            Console.WriteLine($"Method Two A Called By good User {goodID}");
+            Console.WriteLine($"Method Two Called By good User {goodID}");
         }
 
 
@@ -48,7 +53,7 @@ namespace InterfaceSegregation.GoodExamples
 
         public void methodThree()
         {
-            Console.WriteLine($"Method Three A Called By good User {goodID}");
+            Console.WriteLine($"Method Three Called By good User {goodID}");
         }
 
 
