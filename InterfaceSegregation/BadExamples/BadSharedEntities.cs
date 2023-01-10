@@ -7,10 +7,6 @@ using System.Threading.Tasks;
 
 namespace InterfaceSegregation.BadExamples
 {
-        //If user One wants to make a change to Method One, it would effect methodTwo and Three because they are in the same class 
-        //If each is segreated by an interface than that interface could be changed without effecting this file. 
-
-
     public class BadUserOne : IUser, IBadUserInterfaces
     {
         public int badID { get; private set; }
